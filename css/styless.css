@@ -27,6 +27,15 @@
   align-items: center;
 }
 
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150x; 
+  gap: 20px;
+  font-size: 5rem;
+  
+}
 
 
 .btn{
@@ -57,12 +66,6 @@
 
 }
 
-hr{
-  width: 60%;
-  background-color: #915939;
-  height: 10px;
- 
-}
    
 
 
