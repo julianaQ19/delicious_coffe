@@ -20,9 +20,9 @@
 
 
 .caja{
-  margin: 3px;
+  margin: 6px;
   padding: 2px;
-  background-color: #915939;
+  background-color: #ebc3ac;
   height: 60px;
   align-items: center;
 }
@@ -31,13 +31,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150x; 
-  gap: 20px;
-  font-size: 5rem;
+  height: 4rem ; 
+  width: 90rem;
+  gap: 20px;  
   
 }
 
+hr{
+  width: 60%;
+  background-color: #915939;
+  height: 10px;
+ 
+}
 
+
+/*botones*/
 .btn{
  font-family: "roboto", sans-serif;
  font-size: 18px;
@@ -163,6 +171,8 @@ li a:hove,li a.active{
   left: 0;
 }
 }
+ 
+/*footer*/
 
 .logof{
   padding: 0 640px  ;
