@@ -116,12 +116,15 @@
     if (!floatTransitionDuration && !floatTransitionDelay) {
       return 0;
     }
+    
 
     // If multiple durations are defined, take the first
     transitionDuration = transitionDuration.split(',')[0];
     transitionDelay = transitionDelay.split(',')[0];
     return (Number.parseFloat(transitionDuration) + Number.parseFloat(transitionDelay)) * MILLISECONDS_MULTIPLIER;
   };
+  
+
   const triggerTransitionEnd = element => {
     element.dispatchEvent(new Event(TRANSITION_END));
   };
