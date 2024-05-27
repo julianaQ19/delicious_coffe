@@ -58,112 +58,131 @@ html {
 /*                nav                 */
 /* ********************************** */
 
-/*/modificaciones de el cuerpo del Aplicativo/*/
 *{
-    padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
+    padding: 0;
     box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
-
-/*NAV*/
-/*/Fondo del nav y su tamaño/*/
-nav{
-  background: linear-gradient(to right, #7f5a49, #915939);
-  height: 80px;
-  width: 100%;
+/*Variables*/
+:root{
+    --main-color:#bc9667;
+    --second-color:#edeae3;
+    --text-color:linear-gradient(to right,#915939 ,#7f5a49 );
+    --bg-color:#fff;
+/*Box Shadow*/
+--box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%);
 }
-/*/Modificaciones del logo de delicious coffee/*/
-.logo{
-  position: absolute;
-  color: white;
-    font-size: 25px;
-    line-height: 80px;
-    padding: 0 50px;
-    font-weight: bold;
+img{
+    width: 100%;
+    border-radius: 1.5rem;
 }
-/*/Organizar la orientacion de los links del Aplicativo[no los links a]/*/
-nav ul{
-  float: right;
-  margin-right: 20px;
+body{
+    color: var(--text-color);
 }
-/*/Mas modificaciones y demas de los links de delious coffee[no los links a]/*/
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-/*/Aun mas modificaciones de los links de delicious coffee con el cambio de los a /*/
-nav ul li a{
-  color: #fff;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-/*/Modificaciones para la muestra activa del link y su trancición al pasar el cursor/*/
-li a.active,li a:hover{
-  background: #6e4634;
-  transition: .5s;
-}
-/*/tres rallas que aparecen en celular[Responsive mobile]/*/
-.checkbtn{
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-/*/Adjuntado a checkbtn/*/
-#check{
-  display: none;
-}
-/*/Responsive tamaño tablet/*/
-@media(max-width:950px){
-  label.logo{
-    font-size: 20px;
-    padding-left: 50px;
-  }
-  nav ul li a{
-    font-size: 14px;
-  }
-}
-/*/Responsive mobiles y varias tablets/*/
-@media(max-width:840px){
-  .checkbtn{
-    display: block;
-  }ul{
+header{
     position: fixed;
     width: 100%;
-    height: 100vh;
-    background: #c9a46d;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    transition: 0.5s linear;
+    background: var(--text-color);
   }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
+  header.shadow{
+    background: var(--text-color);
+    box-shadow: var(--box-shadow);
   }
-  nav ul li a{
-    font-size: 20px;
+  .logo{
+    width: 60px;
   }
-  li a:hove,li a.active{
-    background: none;
-    color: #c9a46d;
+  .navbar1{
+    display: flex;
   }
-  #check:checked ~ ul{
-    left: 0;
+  
+  .navbar1 a{
+    padding: 8px 17px;
+    color: var(--bg-color);
+    font-size: 1rem;
+    text-transform:uppercase;
+    font-weight: 500;
+    text-decoration: none;
   }
-}
-
-
-
+  .navbar1 a:hover{
+  background: var(--main-color);
+  border-radius: 0.2rem;
+  transition: 0.2 all linear;
+  }
+  .checkbtn{
+    font-size: 19px;
+    color: #ffffff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media(max-width:1015px){
+    header{
+      padding: 16px 60px ;
+    }
+  }
+  @media(max-width:991px){
+    header{
+      padding: 16px 4% ;
+    }
+  }
+  @media(max-width:768px){
+    header{
+      padding: 12px 4% ;
+    }
+    .checkbtn{
+      display: block;
+    }ul{
+      position: absolute;
+      top: 100%;
+      left: -100%;
+      display: flex;
+      flex-direction: column;
+      background: #edeae3;
+      row-gap: 1.4rem;
+      padding: 20px;
+      width: 100%;
+      transition: 0.3s;
+      text-align: center;
+    }
+    .navbar1 a{
+      font-size: 20px;
+      color: #000000;
+    }
+    li a:hover,li a.active{
+      background: none;
+      color: var(--bg-color);
+    }
+    #check:checked ~ ul{
+      left: 0;
+      
+    }
+  }
+  @media(max-width:360px){
+    header{
+      padding: 11p 4%;
+    }
+    .logo img{
+      width: 45px;
+    }
+  }
 
 /* ********************************** */
 /*              FEATURES              */
