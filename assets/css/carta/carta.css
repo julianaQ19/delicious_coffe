@@ -64,7 +64,6 @@ nav {
   background: linear-gradient(to right, #d79475, #915939);
 }
 
-
 /* ********************************** */
 /*              FEATURES              */
 /* ********************************** */
@@ -142,7 +141,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
 }
- /* PANES*/
+/* PANES*/
 .category-capuchino {
   background-image: linear-gradient(#00000080, #00000080),
     url("../../img/img-carta/pan/pancenteno.jpg");
