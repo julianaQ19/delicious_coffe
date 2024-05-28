@@ -4,12 +4,12 @@
       rgb(244, 214, 189) 50%,
       rgba(201, 157, 131, 0.1)
     ),
-    url(../imagenes/img.index/muestra\ .png);
+    url(../img.index/muestra\ .png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
-  width: 400px;
+  width: 470px;
   border-radius: 25px;
 }
 

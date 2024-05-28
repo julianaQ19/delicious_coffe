@@ -58,132 +58,12 @@ html {
 /*                nav                 */
 /* ********************************** */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-padding-top: 4rem;
-  scroll-behavior: smooth;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-}
-/*Variables*/
-:root {
-  --main-color: #bc9667;
-  --second-color: #edeae3;
-  --text-color: linear-gradient(to right, #915939, #7f5a49);
-  --bg-color: #fff;
-  /*Box Shadow*/
-  --box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%);
-}
-img {
-  width: 100%;
-  border-radius: 1.5rem;
-}
-body {
-  color: var(--text-color);
-}
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 100px;
-  transition: 0.5s linear;
-  background: var(--text-color);
-}
-header.shadow {
-  background: var(--text-color);
-  box-shadow: var(--box-shadow);
-}
-.logo {
-  width: 60px;
-}
-.navbar1 {
-  display: flex;
+/*/Fondo del nav y su tamaño/*/
+
+nav {
+  background: linear-gradient(to right, #d79475, #915939);
 }
 
-.navbar1 a {
-  padding: 8px 17px;
-  color: var(--bg-color);
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  text-decoration: none;
-}
-.navbar1 a:hover {
-  background: var(--main-color);
-  border-radius: 0.2rem;
-  transition: 0.2 all linear;
-}
-.checkbtn {
-  font-size: 19px;
-  color: #ffffff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check {
-  display: none;
-}
-@media (max-width: 1015px) {
-  header {
-    padding: 16px 60px;
-  }
-}
-@media (max-width: 991px) {
-  header {
-    padding: 16px 4%;
-  }
-}
-@media (max-width: 768px) {
-  header {
-    padding: 12px 4%;
-  }
-  .checkbtn {
-    display: block;
-  }
-  ul {
-    position: absolute;
-    top: 100%;
-    left: -100%;
-    display: flex;
-    flex-direction: column;
-    background: #edeae3;
-    row-gap: 1.4rem;
-    padding: 20px;
-    width: 100%;
-    transition: 0.3s;
-    text-align: center;
-  }
-  .navbar1 a {
-    font-size: 20px;
-    color: #000000;
-  }
-  li a:hover,
-  li a.active {
-    background: none;
-    color: var(--bg-color);
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-}
-@media (max-width: 360px) {
-  header {
-    padding: 11p 4%;
-  }
-  .logo img {
-    width: 45px;
-  }
-}
 
 /* ********************************** */
 /*              FEATURES              */
@@ -257,15 +137,15 @@ header.shadow {
 
 .category-moca {
   background-image: linear-gradient(#00000080, #00000080),
-    url("../img/cafe/cafe expreso.jpg");
+    url("../../img/img-carta/cafe/cafe\ expreso.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
+ /* PANES*/
 .category-capuchino {
   background-image: linear-gradient(#00000080, #00000080),
-    url("../img/pan/pancenteno.jpg");
+    url("../../img/img-carta/pan/pancenteno.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -273,7 +153,7 @@ header.shadow {
 
 .category-expreso {
   background-image: linear-gradient(#00000080, #00000080),
-    url("../img/postre/posciruela.jpg");
+    url("../../img/img-carta/postre/posciruela.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

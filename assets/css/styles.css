@@ -10,7 +10,7 @@ hr {
   width: 60%;
   background-color: #915939;
   height: 10px;
-}
+  align-items: center;}
 
 /*botones*/
 .btn {
