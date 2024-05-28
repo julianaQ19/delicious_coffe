@@ -99,8 +99,8 @@ input.form-control {
 /* #input {
 } */
 input.form-control:focus {
-  box-shadow: 0 0 5px 1px #915939 !important;
-  background-color: #da8452;
+  box-shadow: 0 0 5px 1px #e8ac8a !important;
+  background-color: #ffc5a3;
 }
 
 /*footer*/
@@ -113,12 +113,12 @@ input.form-control:focus {
 
 footer article figure img {
   all: unset;
-  max-width: 80%;
+  max-width: 30%;
 }
 
 footer.social {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 25px;
+  gap: 15px;
 }
