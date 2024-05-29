@@ -80,3 +80,7 @@ select {
   left: 20px;
   width: 50px; /* Ajusta el tamaño del logo según sea necesario */
 }
+.etiA{
+  text-decoration: none;
+  color:#fff;
+}
