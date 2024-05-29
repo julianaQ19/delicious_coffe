@@ -71,7 +71,7 @@ header.shadow {
 .home {
   width: 100%;
   min-height: 100vh;
-  background: url(../imagenes/imgReserva/11.png);
+  background: url(../../img/img-reserva/11.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -88,7 +88,7 @@ header.shadow {
 }
 .home-text p {
   font-size: 0.938rem;
-  color: var(--bg-color);
+  color: #000;
   margin: 0.5rem 0 1.4rem;
 }
 .boton1 {
