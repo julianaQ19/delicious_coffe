@@ -1,65 +1,86 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.bg-img {
-  background: url(../imagenes/imgReserva/background1.png);
-  height: 150vh;
+body {
+  font-family: Arial, sans-serif;
+  padding: 50px 0;
+  background: url('../../img/img-reserva/11.png') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-}
-
-.bg-img::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  height: 150%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 1001;
-  width: 370px;
-  text-align: center;
-  padding: 5rem 2rem;
-  background: rgba(255, 255, 255, 0.04);
-  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
-}
-
-.content header {
-  color: #fff;
-  font-size: 33px;
-  font-weight: 600;
-  margin: 0 0 35px 0;
-  font-family: "Poppins", sans-serif;
-}
-
-.field {
-  position: relative;
-  height: 45px;
-  width: 100%;
   display: flex;
-  background: rgba(255, 255, 255, 0.94);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  padding: 30px 30px 30px 30px;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.425);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.582);
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-size: cover;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form-group {
+  width: 100%; 
+  margin-bottom: 20px;
+}
+.btn-group {
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
 }
 
-.field span {
-  color: #222;
-  width: 40px;
-  line-height: 45px;
-  padding: 0 10px;
+.btn {
+  color: #fff;
+  font-size: 1.2rem; 
+  padding: 0.8rem 2rem; 
+  border-radius: 0.5rem;
 }
-
-textarea {
-  resize: none;
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  margin-right: 10%;
+  margin-left: -10%;
+}
+.btn-primary {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.form-check-label {
+  margin-left: 0px;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%; 
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+}
+.etiA{
+  text-decoration: none;
+  color:#fff;
 }
