@@ -22,6 +22,7 @@ body {
   height: 100%;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 img {
@@ -63,6 +64,10 @@ hr {
 /*/Fondo del nav y su tamaño/*/
 nav {
   background: linear-gradient(to right, #d79475, #915939);
+}
+
+.carta{
+  text-decoration: none;
 }
 
 /* form */
