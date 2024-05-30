@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --main-color:#bc9667;
+    --second-color:#edeae3;
+    --text-color:linear-gradient(to right,#d79475 ,#915939 );
+    --bg-color:#fff;
+
+/*Box Shadow*/
+--box-shadow:2px 2px 10px 4px rgb(14 55 54 / 15%);
+}
+img{
+  width: 100%;
+  border-radius: 1.5rem;
+}
+body{
+  color: var(--text-color);
+}
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  transition: 0.5s linear;
+  background: var(--text-color);
+}
+header.shadow{
+  background: var(--text-color);
+  box-shadow: var(--box-shadow);
+}
+.logo{
+  width: 65px;
+}
+.navbar1{
+  display: flex;
+}
+
+.navbar1 a{
+  padding: 8px 17px;
+  color: var(--bg-color);
+  font-size: 1rem;
+  text-transform:uppercase;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navbar1 a:hover{
+background: var(--main-color);
+border-radius: 0.2rem;
+transition: 0.2 all linear;
+}
+.checkbtn{
+  font-size: 19px;
+  color: #ffffff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media(max-width:1015px){
+  header{
+    padding: 16px 60px ;
+  }
+}
+@media(max-width:991px){
+  header{
+    padding: 16px 4% ;
+  }
+}
+@media(max-width:768px){
+  header{
+    padding: 12px 4% ;
+  }
+  .checkbtn{
+    display: block;
+  }ul{
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    background: #edeae3;
+    row-gap: 1.4rem;
+    padding: 20px;
+    width: 100%;
+    transition: 0.3s;
+    text-align: center;
+  }
+  .navbar1 a{
+    font-size: 20px;
+    color: #000000;
+  }
+  li a:hover,li a.active{
+    background: none;
+    color: var(--bg-color);
+  }
+  #check:checked ~ ul{
+    left: 0;
+    
+  }
+}
+
+@media(max-width:360px){
+  header{
+    padding: 11p 4%;
+  }
+  .logo img{
+    width:45px;
+}
+}
+
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.map, text{
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.map iframe{
+  width:90%; 
+  height:500px;
+  padding: 90px 10px 3px 55px;
+}
+
+
+.text{
+  margin-top: 100px;
+  text-align: left;
+  padding: 30px 90px 0 40px;
+}
+
+
+
+.pob{
+  color: black;
+  padding: 10px 10px 10px;
+  font-family: monospace;
+}
+
+.lau{
+  color: black;
+  padding: 10px 10px 10px;
+
+}
+
+.sab{
+  color: black;
+  padding: 10px 10px 10px;
+
+}
+
+
+.pob h2{
+  color:#915939
+}
+
+.lau h2{
+  color:#915939
+}
+
+
+.sab h2{
+  color:#915939
+}
+
+
+
+
+
+
+
+
+.box .red-social img{
+width: 46px
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background: linear-gradient(to right, #d79475, #915939);
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 115px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(221, 221, 221);
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #000000;
+}
+.pie-pagina .grupo-2{
+    background: linear-gradient(to right, #d79475, #915939);
+    padding: 15px 10px;
+    text-align: center;
+    color: #ffffff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
