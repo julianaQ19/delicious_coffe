@@ -25,12 +25,9 @@ img{
     width: 100%;
     border-radius: 1.5rem;
 }
-
-
 body{
     background: url('IMG/fsec.jpg');
 }
-
 header{
     position: fixed;
     width: 100%;
@@ -130,11 +127,6 @@ header{
       width: 45px;
 }
 }
-
-
-
-
-
 .home{
     position: relative;
     max-width: 100%;
@@ -145,15 +137,15 @@ header{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 50px 150px 0;
+    padding: 80px 100px 0;
 }
 
 .container{
-    max-width: 620px;
-    width: 55%;
+    max-width: 720px;
+    width: 100%;
     margin: auto;
-    background-color: #ffffff;
-    padding: 4px 20px;
+    background-color: #B9B9B9;
+    padding: 2rem;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #ccc ;
 }
@@ -208,17 +200,46 @@ header{
     box-shadow: 1px 1px 2px #CCC;
 }
 
+.container .user_gender .title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.user_gender .gender_category{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
 
+.user_gender .gender_category label{
+    cursor: pointer;
+}
+
+.user_gender .gender_category span{
+    font-size: 20px;
+}
+
+.container .terms{
+    margin: 1rem 0;
+}
+
+.container .terms p{
+    font-style: italic;
+}
+
+.container .terms a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #09a5e2;
+}
 
 .container .botton{
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    padding: 30px;
 }
 
 .container .botton button{
-    padding: 10px ;
+    padding: 8px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -234,7 +255,7 @@ header{
 }
 
 .botton p{
-    padding: 0 120px;
+    padding: 0 100px;
 }
 
 .botton p a{
@@ -243,29 +264,21 @@ header{
 }
 @media screen and (max-width: 720px){
     .container{
-        max-width: 95px;
+        max-width: 95%;
     }
 
     .user_details .input-box{
-        width: 10%;
-    }
-
-    .container .user_details{
-        max-height: 280px;
-        overflow-y: scroll;
-    }
-
-    .user_gender .gender_category{
         width: 100%;
     }
-    .container .user_details::-webkit-scrollbar{
-        width: 0;
+
+   
     }
 
     .botton p{
         padding: 0 10px;
     }
-}
+g
+
 
 
 
