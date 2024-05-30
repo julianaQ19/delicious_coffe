@@ -238,7 +238,7 @@ header{
     align-items: center;
 }
 
-.container .botton button{
+.container .botton input{
     padding: 8px;
     border-radius: 10px;
     border: none;
